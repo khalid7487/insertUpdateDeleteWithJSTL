@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Chose Option</h1>
+        <a href="insert.jsp">Insert Record</a><br><br/>
+        <a href="">Display Record</a>
     </body>
 </html>
