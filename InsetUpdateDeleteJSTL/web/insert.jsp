@@ -12,10 +12,23 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Purchase Product</h1>
-        Product Name <input type="text" name="pname"><br><br>
-        Quantity <input type="text" name="qty"><br/>
-        <p> <input type="submit" value="Login" style="margin:0px;">
-              <input type="reset" value="Reset"  style="margin:30px;"></p>  
+        <form>
+            <h1>Purchase Product</h1>
+            <table border="0" cellspacing="2" cellpadding="5">
+                <tr>
+                    <td><label>Product Name</label></td>
+                    <td><input type="text" name="pname"></td>
+                </tr>
+                <tr>
+                    <td><label>Quantity</label></td>
+                    <td><input type="text" name="qty"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login" ></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>        
+        </form>
+
     </body>
 </html>
