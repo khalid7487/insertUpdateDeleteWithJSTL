@@ -4,6 +4,7 @@
     Author     : KHALID
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form>
+        <form action="insertdb.jsp" method="post">
             <h1>Purchase Product</h1>
             <table border="0" cellspacing="2" cellpadding="5">
                 <tr>
@@ -29,6 +30,12 @@
                 </tr>
             </table>        
         </form>
-
+        <font color="red">
+        <c:if test="${not empty param.errMsg}">
+            <c:out value="${param.errMsg}"/></c:if>
+        </font>
+        <font color="green"><c:if test="${param.susMsg}">
+            <c:out value="${param.susMsg}"/>
+        </c:if>
     </body>
 </html>
