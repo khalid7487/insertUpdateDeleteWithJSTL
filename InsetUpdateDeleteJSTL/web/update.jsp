@@ -36,6 +36,7 @@
                         <td><input type="hidden" value="${param.id}" name="id"/>
                         <input type="text"  value="${row.pname}" name="pname"/></td>
                         <td><input type="text" value="${row.qty}" name="qty"/></td>
+                        <td><input type="submit" value="Update"/></td>
                     </tr>
                 </c:forEach>
             </table>
