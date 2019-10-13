@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 12-Sep-2019, 20:04:29
+    Document   : update
+    Created on : 13-Oct-2019, 11:12:45
     Author     : KHALID
 --%>
 
@@ -12,8 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Chose Option</h1>
-        <a href="insert.jsp">Insert Record</a><br><br/>
-        <a href="display.jsp">Display Record</a>
+        <h1>Hello World!</h1>
     </body>
 </html>
