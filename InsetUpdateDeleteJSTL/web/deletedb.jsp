@@ -20,6 +20,14 @@
         <sql:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
                            url="jdbc:mysql://localhost:3306/loginjdbc"
                            user="root" password="7487"/>
-        
+        <sql:update dataSource="${dbsource}" var="count">
+            DELETE FROM product
+            WHERE id='${param.id}'
+        </sql:update>
+        <c:if test="${count>=1}">
+            <font size="5" color='green'> Congratulations ! Data deleted
+            successfully.</font>
+              <a href="index.jsp">Go Home</a>          
+        </c:if>  
     </body>
 </html>

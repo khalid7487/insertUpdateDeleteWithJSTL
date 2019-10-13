@@ -15,7 +15,7 @@
         <title>Select Operation</title>
         <script>
             function confirmGo(m,u){
-                if(confirmGo(m)){
+                if(confirm(m)){
                     window.location=u;
                 }
             }
@@ -44,12 +44,14 @@
                         <td><c:out value="${row.pname}"/></td>
                         <td><c:out value="${row.qty}"/></td>
                         <td><a href="update.jsp?id=<c:out value="${row.id}"/>">Update</a></td>
-                        <td><a href="javascript:confirmGo('Sure to delete this record?','deletedb.jsp?id=<c:out value="${row.id}"/>')">Delete</a></td>                        
-                    </tr>                   
+                        <td><a href="javascript:confirmGo('Sure to delete this record?','deletedb.jsp?id=<c:out value="${row.id}"/>')">Delete</a></td>
+                         
+                    </tr>
                 </c:forEach>
             </table>
         </form>
         <a href="index.jsp">Go Home</a>
     </center>
-    </body>
+</body>
 </html>
+
